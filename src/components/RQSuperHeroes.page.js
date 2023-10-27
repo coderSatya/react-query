@@ -9,11 +9,35 @@ const fetchSuperHeroes = ()=>{
 const RQSuperHeroesPage = () => {
 
 
+
+
 //   const {isLoading, data} = useQuery('super-heroes', ()=>{
 // return axios.get('http://localhost:4000/superheroes')
 //   })  // 1st Method
 
-const {isLoading, data, isError, error, isFetching} = useQuery('super-heroes',fetchSuperHeroes, {cacheTime:5000}) 
+const onSuccess = (data)=>{
+  console.log('Perform side effects after data fetching', data)
+}
+const onError = (error)=>{
+  console.log('Perform side effect after encountering error',error)
+}
+
+const {isLoading, data, isError, error, isFetching, refetch} = useQuery('super-heroes',
+fetchSuperHeroes, 
+{
+  // staleTime:0
+  // refetchOnMount:true,
+  // refetchOnWindowFocus:false
+  // refetchInterval:false,
+  // refetchIntervalInBackground:true
+  //  enabled:false
+  onSuccess:onSuccess,
+  onError:onError,
+  select:(data)=>{const superHeroNames = data.data.map((hero)=>hero.name)
+  return superHeroNames
+},
+}
+) 
 console.log({isFetching, isLoading})
 
   if(isLoading){
@@ -27,9 +51,11 @@ console.log({isFetching, isLoading})
   return (
     <div>
       <h1>RQ super hero</h1>
-      {data?.data.map((hero)=>{
-return (<div key={hero?.name}>{hero?.name}</div>);
-      })}
+      <button onClick={refetch}>Show Heroes</button>
+       
+{data.map((heroName)=>{
+  return <div key={heroName}>{heroName}</div>
+})}
     </div>
   )
 }
