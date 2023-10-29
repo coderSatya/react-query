@@ -15,5 +15,22 @@
         "name": "Wonder Woman 123",
         "alterEgo": "Princess Diana"
       }
+    ],
+    "friends":[
+      {
+        "id": 1,
+        "name": "Rohit Sharma",
+        "nickName": "Hit-man"
+      },
+      {
+        "id": 2,
+        "name": "Virat Kholi",
+        "nickName": "Chiku"
+      },
+      {
+        "id": 3,
+        "name": "Siraj",
+        "nickName": "Miya bhai"
+      }
     ]
   }
