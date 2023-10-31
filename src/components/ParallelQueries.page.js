@@ -13,9 +13,7 @@ const ParallelQueriesPage = () => {
   const { data: friends } = useQuery("friends", fetchFrieds);
   return (
     <div>
-      {data?.data.map((ele) => {
-        console.log(ele, "oooo");
-      })}
+    ParallelQueriesPage
     </div>
   );
 };

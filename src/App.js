@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 // import { BrowserRouter as Router,Route,Switch, Link, Routes } from 'react-router-dom'
+import axios from "axios";
 import SuperHeroesPage from "./components/SuperHeroes.page";
 import RQSuperHeroesPage from "./components/RQSuperHeroes.page";
 import HomePage from "./components/Home.page";
@@ -13,6 +14,9 @@ import ParallelQueriesPage from "./components/ParallelQueries.page";
 
 const queryClient = new QueryClient();
 function App() {
+  axios.interceptors.request.use((request)=>{
+    console.log(request,'request');
+  })
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
