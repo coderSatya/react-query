@@ -7,6 +7,7 @@ const SuperHeroesPage = () => {
   const [error, setError] = useState('')
   useEffect(()=>{
 axios.get('http://localhost:4000/superheroes').then((res)=>{
+  console.log(res.data, '9999')
 setData(res.data);
 setIsLoading(false);
 }).catch((error)=>{

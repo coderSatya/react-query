@@ -14,9 +14,9 @@ import ParallelQueriesPage from "./components/ParallelQueries.page";
 
 const queryClient = new QueryClient();
 function App() {
-  axios.interceptors.request.use((request)=>{
-    console.log(request,'request');
-  })
+  // axios.interceptors.request.use((request)=>{
+  //   console.log(request,'request');
+  // })
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
