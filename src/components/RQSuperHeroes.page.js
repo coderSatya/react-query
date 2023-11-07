@@ -60,15 +60,18 @@
 // export default RQSuperHeroesPage
 
 import React from "react";
-import { useAddSuperHeroData, useSuperHeroesData } from "../hooks/useSuperHeroesData";
+import {
+  useAddSuperHeroData,
+  useSuperHeroesData,
+} from "../hooks/useSuperHeroesData";
 
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const RQSuperHeroesPage = () => {
-  const [name, setName] = useState('');
-const [alterEgo,setAlterEgo] = useState('')
+  const [name, setName] = useState("");
+  const [alterEgo, setAlterEgo] = useState("");
   //   const {isLoading, data} = useQuery('super-heroes', ()=>{
   // return axios.get('http://localhost:4000/superheroes')
   //   })  // 1st Method
@@ -79,9 +82,9 @@ const [alterEgo,setAlterEgo] = useState('')
   const onError = (error) => {
     console.log("Perform side effect after encountering error", error);
   };
-  const {mutate:addhero,} = useAddSuperHeroData()
+  const { mutate: addhero } = useAddSuperHeroData();
 
-  const { isLoading, data, isError, error, isFetching, refetch } =
+  const { isLoading, isError, data, error, isFetching, refetch } =
     useSuperHeroesData(onSuccess, onError);
 
   console.log({ isFetching, isLoading });
@@ -94,26 +97,26 @@ const [alterEgo,setAlterEgo] = useState('')
   }
 
   // console.log(data.data, 'data')
-  const handleAddHeroClick = ()=>{
-    console.log({name, alterEgo})
-    const hero = {name, alterEgo}
-   addhero(hero)
-  }
+  const handleAddHeroClick = () => {
+    console.log({ name, alterEgo });
+    const hero = { name, alterEgo };
+    addhero(hero);
+  };
   return (
     <div>
       <h1>RQ super hero</h1>
       <div>
-      <input 
-      type="text"
-      value={name}
-      onChange={(e)=>setName(e.target.value)}
-      />
-      <input 
-      type="text"
-      value={alterEgo}
-      onChange={(e)=>setAlterEgo(e.target.value)}
-      />
-      <button onClick={handleAddHeroClick}>Add Hero</button>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          value={alterEgo}
+          onChange={(e) => setAlterEgo(e.target.value)}
+        />
+        <button onClick={handleAddHeroClick}>Add Hero</button>
       </div>
       <button onClick={refetch}>Show Heroes</button>
 
