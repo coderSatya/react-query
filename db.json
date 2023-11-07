@@ -1,49 +1,24 @@
 {
   "superheroes": [
     {
-      "id": 1,
-      "name": "Batman dfsaa",
-      "alterEgo": "Bruce Wayne"
+      "name": "Shaktiman",
+      "alterEgo": "ganga",
+      "id": 1
     },
     {
-      "name": "Batman",
-      "alterEgo": "Bruce",
+      "name": "Superman",
+      "alterEgo": "Tom",
       "id": 2
     },
     {
-      "name": "Batman",
-      "alterEgo": "Bruce",
+      "name": "batman",
+      "alterEgo": "cruise",
       "id": 3
     },
     {
-      "name": "ssaa",
-      "alterEgo": "sda",
+      "name": "Catwoman",
+      "alterEgo": "miss",
       "id": 4
-    },
-    {
-      "name": "ssaa",
-      "alterEgo": "sda",
-      "id": 5
-    },
-    {
-      "name": "asd",
-      "alterEgo": "fdsde",
-      "id": 6
-    },
-    {
-      "name": "rat",
-      "alterEgo": "tar",
-      "id": 7
-    },
-    {
-      "name": "ewfreter",
-      "alterEgo": "reterter",
-      "id": 8
-    },
-    {
-      "name": "tom",
-      "alterEgo": "bruce",
-      "id": 9
     }
   ],
   "friends": [
