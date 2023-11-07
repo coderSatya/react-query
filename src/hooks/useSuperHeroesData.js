@@ -1,10 +1,13 @@
 import { useQuery, useMutation, useQueryClient } from "react-query";
 import axios from "axios";
+import { request } from "../utils/axios-utils";
 const fetchSuperHeroes = () => {
-  return axios.get("http://localhost:4000/superheroes");
+  // return axios.get("http://localhost:4000/superheroes");
+  return request({url:'/superheroes'}) // example of axios interceptor
 };
 const addSuperHero = async (hero) => {
-  return await axios.post("http://localhost:4000/superheroes", hero);
+  // return await axios.post("http://localhost:4000/superheroes", hero);
+  return request({url:'/superheroes', method:'post', data:hero}) // example of axios interceptor
 };
 export const useSuperHeroesData = (onSuccess, onError) => {
   return useQuery("super-heroes", fetchSuperHeroes, {

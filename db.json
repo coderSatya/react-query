@@ -19,6 +19,21 @@
       "name": "Catwoman",
       "alterEgo": "miss",
       "id": 4
+    },
+    {
+      "name": "Satya",
+      "alterEgo": "Prakash",
+      "id": 5
+    },
+    {
+      "name": "ANsh",
+      "alterEgo": "Gupta",
+      "id": 6
+    },
+    {
+      "name": "Ravi",
+      "alterEgo": "Kumar",
+      "id": 7
     }
   ],
   "friends": [
