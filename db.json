@@ -6,49 +6,44 @@
       "alterEgo": "Bruce Wayne"
     },
     {
-      "id": 2,
-      "name": "Superman",
-      "alterEgo": "Clark Kent"
+      "name": "Batman",
+      "alterEgo": "Bruce",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Wonder Woman 123",
-      "alterEgo": "Princess Diana"
+      "name": "Batman",
+      "alterEgo": "Bruce",
+      "id": 3
     },
     {
-      "name": "The flash",
-      "alterEgo": "Barry Allen",
+      "name": "ssaa",
+      "alterEgo": "sda",
       "id": 4
     },
     {
-      "name": "asxax",
-      "alterEgo": "asdaa",
+      "name": "ssaa",
+      "alterEgo": "sda",
       "id": 5
     },
     {
-      "name": "Tarzan",
-      "alterEgo": "wonder car",
+      "name": "asd",
+      "alterEgo": "fdsde",
       "id": 6
     },
     {
-      "name": "sdasdadsaa",
-      "alterEgo": "sdasda",
+      "name": "rat",
+      "alterEgo": "tar",
       "id": 7
     },
     {
-      "name": "aslkj",
-      "alterEgo": "xc",
+      "name": "ewfreter",
+      "alterEgo": "reterter",
       "id": 8
     },
     {
-      "name": "ni",
-      "alterEgo": "as",
+      "name": "tom",
+      "alterEgo": "bruce",
       "id": 9
-    },
-    {
-      "name": "catwoman",
-      "alterEgo": "pretty ",
-      "id": 10
     }
   ],
   "friends": [

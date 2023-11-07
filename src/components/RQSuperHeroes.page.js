@@ -79,7 +79,7 @@ const [alterEgo,setAlterEgo] = useState('')
   const onError = (error) => {
     console.log("Perform side effect after encountering error", error);
   };
-  const {mutate:addhero,} = useAddSuperHeroData()
+  const {mutate:addhero, } = useAddSuperHeroData()
 
   const { isLoading, data, isError, error, isFetching, refetch } =
     useSuperHeroesData(onSuccess, onError);
