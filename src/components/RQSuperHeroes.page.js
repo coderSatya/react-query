@@ -86,8 +86,10 @@ const RQSuperHeroesPage = () => {
 
   const { isLoading, isError, data, error, isFetching, refetch } =
     useSuperHeroesData(onSuccess, onError);
+ 
+// refetch : when we want to show data on a click
 
-  console.log({ isFetching, isLoading });
+  console.log({  isLoading,isFetching });
 
   if (isLoading) {
     return <h2>Loading...</h2>;
