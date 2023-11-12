@@ -6,12 +6,12 @@
       "id": 1
     },
     {
-      "name": "Superman",
-      "alterEgo": "Tom",
+      "name": "Superman ",
+      "alterEgo": "Tom 123",
       "id": 2
     },
     {
-      "name": "batman",
+      "name": "batman123",
       "alterEgo": "cruise",
       "id": 3
     },
@@ -21,9 +21,19 @@
       "id": 4
     },
     {
-      "name": "Catwoman",
-      "alterEgo": "miss",
-      "id": 4
+      "name": "Satya",
+      "alterEgo": "Prakash",
+      "id": 5
+    },
+    {
+      "name": "ANsh",
+      "alterEgo": "Gupta",
+      "id": 6
+    },
+    {
+      "name": "Ravi",
+      "alterEgo": "Kumar",
+      "id": 7
     }
   ],
   "friends": [

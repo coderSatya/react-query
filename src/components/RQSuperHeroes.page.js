@@ -86,8 +86,10 @@ const RQSuperHeroesPage = () => {
 
   const { isLoading, isError, data, error, isFetching, refetch } =
     useSuperHeroesData(onSuccess, onError);
+ 
+// refetch : when we want to show data on a click
 
-  console.log({ isFetching, isLoading });
+  console.log({  isLoading,isFetching });
 
   if (isLoading) {
     return <h2>Loading...</h2>; // Query-cache , for the first time when react-query is fired for super-hero key isLoading is set to true and network req sent to fetch the data and fetch data and loading is there but after you again fetch data first it go to cacahe and check whether the data is present or not, if present then it immeditately show the cache data and skip isLoading and data shown is very fast. This is the concept of cache data.
