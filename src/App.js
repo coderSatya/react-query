@@ -20,6 +20,8 @@ function App() {
   // })
   return (
     <QueryClientProvider client={queryClient}>
+      {" "}
+      {/*import this from react-query and wrap inside app component*/}
       <div className="App">
         <BrowserRouter>
           <div>
